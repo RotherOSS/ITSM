@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otobo_package version="1.0">
+    <Name>ITSM</Name>
+<!-- nofilter(TidyAll::Plugin::OTOBO::SOPM::DocumentationPresent) -->
+    <Version>0.0.0</Version>
+    <Framework>10.0.x</Framework>
+    <Vendor>Rother OSS GmbH</Vendor>
+    <URL>https://otobo.de/</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <Description Lang="en">The OTOBO::ITSM bundle package.</Description>
+    <Description Lang="de">Das OTOBO::ITSM Bundle Paket.</Description>
+    <Description Lang="hu">Az összes OTOBO::ITSM csomag egyben.</Description>
+    <Filelist>
+        <File Permission="660" Location="Kernel/Config/Files/XML/FrameworkITSM.xml" />
+        <File Permission="660" Location="var/packagesetup/ITSM/GeneralCatalog.opm" />
+        <File Permission="660" Location="var/packagesetup/ITSM/ImportExport.opm" />
+        <File Permission="660" Location="var/packagesetup/ITSM/ITSMChangeManagement.opm" />
+        <File Permission="660" Location="var/packagesetup/ITSM/ITSMConfigurationManagement.opm" />
+        <File Permission="660" Location="var/packagesetup/ITSM/ITSMCore.opm" />
+        <File Permission="660" Location="var/packagesetup/ITSM/ITSMIncidentProblemManagement.opm" />
+        <File Permission="660" Location="var/packagesetup/ITSM/ITSMServiceLevelManagement.opm" />
+        <File Permission="660" Location="var/packagesetup/ITSM.pm" />
+    </Filelist>
+    <CodeInstall Type="post"><![CDATA[
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        $Kernel::OM->Get($CodeModule)->CodeInstall();
+
+    ]]></CodeInstall>
+    <CodeUpgrade Type="post"><![CDATA[
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        # discard internally stored object, so that the next access to object creates them newly
+        $Kernel::OM->ObjectsDiscard(
+            Objects            => [$CodeModule],
+            ForcePackageReload => 1,
+        );
+
+        $Kernel::OM->Get($CodeModule)->CodeUpgrade();
+
+    ]]></CodeUpgrade>
+    <CodeUninstall Type="pre"><![CDATA[
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        $Kernel::OM->Get($CodeModule)->CodeUninstall();
+
+    ]]></CodeUninstall>
+    <IntroInstall Type="pre" Title="Installation Information" Lang="en"><![CDATA[
+
+        <br>
+        <b>WELCOME</b>
+        <br>
+        <br>
+        You are about to install the OTOBO package ITSM.
+        This package will install OTOBO::ITSM 6.0.26 on your system.
+        <br>
+        <br>
+        If you already installed some OTOBO::ITSM packages on your system, please make sure first
+        that the OTOBO::ITSM packages are at least of version 1.3.1 or higher!
+        <br>
+        <br>
+        After a successful installation, the following packages will be installed and shown by the package manager:
+        <br>
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        <br>
+        <b>ATTENTION</b>
+        <br>
+        <br>
+        Make sure your database accepts packages over 20 MB in size.
+        A MySQL database for example accepts packages up to 1 MB by default.
+        In this case, the value for max_allowed_packet must be increased.
+        The recommended maximum size accepted is 50 MB.
+        <br>
+        <br>
+        The installation can take several minutes!
+        <br>
+        Do not stop the installation process once it is running!
+        <br>
+        <br>
+        As the installation process can take a while, it might be possible that the browser gets a timeout error.
+        If this happens, the installation will proceed in the background without any problems.
+        <br>
+        <br>
+        <b>NOTICE</b>
+        <br>
+        <br>
+        After a successfull installation, please note the following information:
+        <br>
+        <br>
+        In order to grant users access to the service menu, you need to add them as member to the group 'itsm-service'.
+        <br>
+        <br>
+        In order to grant users access to the config item menu, you need to add them as member to the group 'itsm-configitem'.
+        <br>
+        <br>
+        In order to grant users access to the change menu, you need to add them as member to the group 'itsm-change'.
+        <br>
+        <br>
+        The menu items that are added by this package will be visible after you log-in to the system again.
+        <br>
+        <br>
+        The statistics that are installed by this package will be available in the menu item 'Stats'.
+        <br>
+        <br>
+        ((enjoy))<br>
+        <br>
+
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
+
+        <br>
+        <b>WILLKOMMEN</b>
+        <br>
+        <br>
+        Sie sind im Begriff das OTOBO-Paket ITSM zu installieren.
+        Dieses Paket installiert OTOBO::ITSM 6.0.26 auf Ihrem System.
+        <br>
+        <br>
+        Wenn auf Ihrem System bereits OTOBO::ITSM-Pakete installiert
+        sein sollten, dann stellen Sie zunächst sicher, dass die OTOBO::ITSM-Pakete mindestens der Version 1.3.1
+        entsprechen!
+        <br>
+        <br>
+        Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
+        <br>
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        <br>
+        <b>ACHTUNG</b>
+        <br>
+        <br>
+        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 20 MB akzeptiert.
+        Eine MySQL Datenbank akzeptiert beispielsweise standardmäßig Pakete mit einer Größe von maximal 1 MB.
+        In diesem Fall muss der Wert für max_allowed_packet erhöht werden.
+        Empfohlen werden 50 MB.
+        <br>
+        <br>
+        Die Installation kann mehrere Minuten in Anspruch nehmen!
+        <br>
+        Brechen Sie die den Installations-Vorgang nicht ab!
+        <br>
+        <br>
+        Unter Umständen kann es möglich sein das die Installation so lange dauert,
+        dass der Browser einen Timeout-Error anzeigt.
+        Sollte dies der Fall sein, läuft die Installation problemlos im Hintergrund weiter.
+        <br>
+        <br>
+        <b>HINWEIS</b>
+        <br>
+        <br>
+        Nach erfolgreicher Installation beachten Sie bitte die folgenden Informationen:
+        <br>
+        <br>
+        Um Benutzern Zugriff auf das Service-Menü zu gewähren, müssen diese Mitglied der neuen Gruppe 'itsm-service' sein.
+        <br>
+        <br>
+        Um Benutzern Zugriff auf das ConfigItem-Menü zu gewähren, müssen diese Mitglied der neuen Gruppe 'itsm-configitem' sein.
+        <br>
+        <br>
+        Um Benutzern Zugriff auf das Change-Menü zu gewähren, müssen diese Mitglied der neuen Gruppe 'itsm-change' sein.
+        <br>
+        <br>
+        Die von diesem Paket hinzugefügten Menü-Punkte sind erst nach einem erneuten Anmeldevorgang im System sichtbar.
+        <br>
+        <br>
+        Im Menü-Punkt 'Statistik' sind die von diesem Paket installierten Statistiken verfügbar.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
+
+        <br>
+        <b>ÜDVÖZÖLJÜK</b>
+        <br>
+        <br>
+        Ön az OTOBO::ITSM csomag telepítésére készül.
+        Ez a csomag az OTOBO::ITSM 6.0.26 verzióját fogja telepíteni a rendszerre.
+        <br>
+        <br>
+        Ha már telepítette valamelyik OTOBO::ITSM csomagot a rendszerre, akkor először győződjön
+        meg arról, hogy az OTOBO::ITSM csomagok legalább 1.3.1 verziójúak vagy újabbak!
+        <br>
+        <br>
+        Egy sikeres telepítés után a következő csomagokat fogja telepíteni és megjeleníteni a
+        csomagkezelő:
+        <br>
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        <br>
+        <b>FIGYELEM</b>
+        <br>
+        <br>
+        Győződjön meg arról, hogy az adatbázisa elfogadja-e a 20 MB-nál nagyobb méretű csomagokat.
+        Például egy MySQL adatbázis alapértelmezetten legfeljebb 1 MB méretű csomagot fogad el.
+        Ebben az esetben a max_allowed_packet értékét kell megnövelni.
+        A javasolt legnagyobb elfogadott méret 50 MB.
+        <br>
+        <br>
+        A telepítés több percig is eltarthat!
+        <br>
+        Ne szakítsa meg a telepítési folyamatot, ha már egyszer elindult!
+        <br>
+        <br>
+        Mivel a telepítési folyamat eltarthat egy ideig, ezért lehetséges, hogy a böngésző
+        időtúllépési korlát hibát fog kapni.
+        Ha ez történne, attól a telepítés még folytatódni fog a háttérben mindenféle probléma
+        nélkül.
+        <br>
+        <br>
+        <b>MEGJEGYZÉS</b>
+        <br>
+        <br>
+        Egy sikeres telepítés után vegye figyelembe a következő információkat:
+        <br>
+        <br>
+        Annak érdekében, hogy hozzáférést adjon a felhasználóknak a szolgáltatásmenühöz, hozzá
+        kell adnia őket tagként az „itsm-service” csoporthoz.
+        <br>
+        <br>
+        Annak érdekében, hogy hozzáférést adjon a felhasználóknak a konfigurációelem-menühöz,
+        hozzá kell adnia őket tagként az „itsm-configitem” csoporthoz.
+        <br>
+        <br>
+        Annak érdekében, hogy hozzáférést adjon a felhasználóknak a változásmenühöz, hozzá kell
+        adnia őket tagként az „itsm-change” csoporthoz.
+        <br>
+        <br>
+        A csomag által hozzáadott menüpontok azután lesznek láthatók, miután ismét bejelentkezik
+        a rendszerbe.
+        <br>
+        <br>
+        A csomag által telepített statisztikák a „Statisztikák” menüpontban lesznek elérhetők.
+        <br>
+        <br>
+        ((enjoy))<br>
+        <br>
+
+    ]]></IntroInstall>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
+
+        <br>
+        <b>WELCOME</b>
+        <br>
+        <br>
+        You are about to upgrade the OTOBO package ITSM.<br>
+        This package will upgrade your system to OTOBO::ITSM 6.0.26.
+        <br>
+        <br>
+        After a successful upgrade, the following packages will be installed and shown by the package manager:
+        <br>
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        <br>
+        <b>ATTENTION</b>
+        <br>
+        <br>
+        Make sure your database accepts packages over 20 MB in size.
+        A MySQL database for example accepts packages up to 1 MB by default.
+        In this case, the value for max_allowed_packet must be increased.
+        The recommended maximum size accepted is 50 MB.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
+
+        <br>
+        <b>WILLKOMMEN</b>
+        <br>
+        <br>
+        Sie sind im Begriff das OTOBO-Paket ITSM zu aktualisieren.
+        Dieses Paket aktualisiert Ihr System auf OTOBO::ITSM 6.0.26.
+        <br>
+        <br>
+        Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
+        <br>
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        <br>
+        <b>ACHTUNG</b>
+        <br>
+        <br>
+        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 20 MB akzeptiert.
+        Eine MySQL Datenbank akzeptiert beispielsweise standardmäßig Pakete mit einer Größe von maximal 1 MB.
+        In diesem Fall muss der Wert für max_allowed_packet erhöht werden.
+        Empfohlen werden 50 MB.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
+
+        <br>
+        <b>ÜDVÖZÖLJÜK</b>
+        <br>
+        <br>
+        Ön az OTOBO::ITSM csomag frissítésére készül.
+        Ez a csomag frissíteni fogja a rendszerét az OTOBO::ITSM 6.0.26 verziójára.
+        <br>
+        <br>
+        Egy sikeres frissítés után a következő csomagokat fogja telepíteni és megjeleníteni a
+        csomagkezelő:
+        <br>
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        <br>
+        <b>FIGYELEM</b>
+        <br>
+        <br>
+        Győződjön meg arról, hogy az adatbázisa elfogadja-e a 20 MB-nál nagyobb méretű csomagokat.
+        Például egy MySQL adatbázis alapértelmezetten legfeljebb 1 MB méretű csomagot fogad el.
+        Ebben az esetben a max_allowed_packet értékét kell megnövelni.
+        A javasolt legnagyobb elfogadott méret 50 MB.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUpgrade>
+    <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="en"><![CDATA[
+
+        <br>
+        <b>ATTENTION</b>
+        <br>
+        <br>
+        If you uninstall this package, the following packages will be uninstalled automatically:
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        All database tables that were created during installation will be deleted.
+        All data from these tables will be irrevocably lost!
+        <br>
+        <br>
+        The groups 'itsm-service', 'itsm-configitem', 'itsm-change', 'itsm-change-builder' and 'itsm-change-manager'
+        that were created during package installation will be deactivated.
+        You can activate these groups again in the admin area.
+        <br>
+        <br>
+        All links to config item objects, change objects and workorder objects will be irrevocably deleted!
+        <br>
+        <br>
+        The statistics that are associated with these packages, will no longer be available if the package is uninstalled.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUninstall>
+    <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="de"><![CDATA[
+
+        <br>
+        <b>ACHTUNG</b>
+        <br>
+        <br>
+        Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
+        Alle darin enthaltenen Daten gehen unwiderruflich verloren!
+        <br>
+        <br>
+        Die von diesen Paketen angelegten Gruppen 'itsm-service', 'itsm-configitem', 'itsm-change',
+        'itsm-change-builder' und 'itsm-change-manager' werden deaktiviert.
+        Sie können jederzeit im Admin-Bereich wieder aktiviert werden.
+        <br>
+        <br>
+        Alle Verknüpfungen zu ConfigItem-Objekten, Change-Objekten und Workorder-Objekten werden unwiderruflich gelöscht!
+        <br>
+        <br>
+        Nach der Deinstallation sind die zu diesen Paketen zugehörigen Statistiken nicht mehr verfügbar.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUninstall>
+    <IntroUninstall Type="pre" Title="Eltávolítási információk" Lang="hu"><![CDATA[
+
+        <br>
+        <b>FIGYELEM</b>
+        <br>
+        <br>
+        Ha eltávolítja ezt a csomagot, akkor a következő csomagok lesznek automatikusan eltávolítva:
+        <ul>
+        <li>GeneralCatalog 6.0.26</li>
+        <li>ITSMCore 6.0.26</li>
+        <li>ITSMIncidentProblemManagement 6.0.26</li>
+        <li>ITSMConfigurationManagement 6.0.26</li>
+        <li>ITSMChangeManagement 6.0.26</li>
+        <li>ITSMServiceLevelManagement 6.0.26</li>
+        <li>ImportExport 6.0.26</li>
+        </ul>
+        <br>
+        A telepítés során létrehozott összes adatbázistábla törlésre kerül.
+        Az ezekben a táblákban lévő összes adat visszavonhatatlanul el fog veszni!
+        <br>
+        <br>
+        A csomagtelepítés során létrehozott „itsm-service”, „itsm-configitem”, „itsm-change”,
+        „itsm-change-builder” és „itsm-change-manager” csoport ki lesz kapcsolva.
+        Ezeket a csoportokat az adminisztrációs területen tudja ismét bekapcsolni.
+        <br>
+        <br>
+        A konfigurációelem-objektumokra, változásobjektumokra és munkamegrendelés-objektumokra
+        mutató összes hivatkozás visszavonhatatlanul törölve lesz!
+        <br>
+        <br>
+        Az ehhez a csomaghoz hozzárendelt statisztikák többé nem lesznek elérhetők, ha a csomag
+        eltávolításra kerül.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUninstall>
+</otobo_package>

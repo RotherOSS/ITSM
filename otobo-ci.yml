@@ -1,0 +1,9 @@
+Active: 1
+
+PlatformSets:
+ - ondemand-otobo10
+
+DeployOTOBOBranch: rel-10_0
+
+DeployOTOBOPackages:
+ - OTOBOCodePolicy@master
