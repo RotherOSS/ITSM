@@ -73,8 +73,8 @@ sub new {
         'ImportExport',
     ];
 
-    # define the version of the included packages
-    $Self->{PackageVersion} = '6.0.26';
+    # define the version of the included packages TODO
+    $Self->{PackageVersion} = '10.0.0';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
