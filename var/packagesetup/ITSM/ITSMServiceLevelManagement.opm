@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>10.0.0</Version>
+    <Version>10.0.0.2</Version>
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.de/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <ChangeLog Date="2020-03-05 14:42:42" Version="10.0.0.1">TESTBUILD - ONLY INTENDED FOR DEVELOPMENT TESTS!!</ChangeLog>
+    <ChangeLog Date="2020-07-10 08:38:39" Version="10.0.0.2">TESTBUILD - ONLY INTENDED FOR DEVELOPMENT TESTS!!</ChangeLog>
     <Description Lang="en">The OTOBO::ITSM Service Level Management package.</Description>
     <Description Lang="de">Das OTOBO::ITSM Service Level Management Paket.</Description>
     <Description Lang="es">El paquete OTOBO::ITSM Service Level Management.</Description>
@@ -299,7 +299,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2020-03-05 14:42:42</BuildDate>
+    <BuildDate>2020-07-10 08:38:39</BuildDate>
     <BuildHost>opms</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="660" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdG9ib19zdGF0cz4KPENhY2hlPjA8L0NhY2hlPgo8RGVzY3JpcHRpb24+VG90YWwgbnVtYmVyIG9mIGFsbCB0aWNrZXRzIGV2ZXIgY3JlYXRlZCBwZXIgVGlja2V0LVR5cGUgYW5kIFByaW9yaXR5LgoKWC1BeGlzOiBUaWNrZXQtVHlwZQpZLUF4aXM6IFByaW9yaXR5CgpSZXN0cmljdGlvbnM6CiAgICAtbm9uZTwvRGVzY3JpcHRpb24+CjxGaWxlPjwvRmlsZT4KPEZvcm1hdD5DU1Y8L0Zvcm1hdD4KPEZvcm1hdD5FeGNlbDwvRm9ybWF0Pgo8Rm9ybWF0PlByaW50PC9Gb3JtYXQ+CjxGb3JtYXQ+RDM6OkJhckNoYXJ0PC9Gb3JtYXQ+CjxGb3JtYXQ+RDM6OkxpbmVDaGFydDwvRm9ybWF0Pgo8Rm9ybWF0PkQzOjpTdGFja2VkQXJlYUNoYXJ0PC9Gb3JtYXQ+CjxHcmFwaFNpemU+PC9HcmFwaFNpemU+CjxPYmplY3Q+VGlja2V0PC9PYmplY3Q+CjxPYmplY3RNb2R1bGU+S2VybmVsOjpTeXN0ZW06OlN0YXRzOjpEeW5hbWljOjpUaWNrZXQ8L09iamVjdE1vZHVsZT4KPFBlcm1pc3Npb24+c3RhdHM8L1Blcm1pc3Npb24+CjxTdGF0VHlwZT5keW5hbWljPC9TdGF0VHlwZT4KPFN1bUNvbD4xPC9TdW1Db2w+CjxTdW1Sb3c+MTwvU3VtUm93Pgo8VGl0bGU+VG90YWwgbnVtYmVyIG9mIGFsbCB0aWNrZXRzIGV2ZXIgY3JlYXRlZCBwZXIgVGlja2V0LVR5cGUgYW5kIFByaW9yaXR5PC9UaXRsZT4KPFVzZUFzVmFsdWVTZXJpZXMgRWxlbWVudD0iUHJpb3JpdHlJRHMiIEZpeGVkPSIxIj4KPC9Vc2VBc1ZhbHVlU2VyaWVzPgo8VXNlQXNYdmFsdWUgRWxlbWVudD0iVHlwZUlEcyIgRml4ZWQ9IjEiPgo8L1VzZUFzWHZhbHVlPgo8VmFsaWQ+MTwvVmFsaWQ+Cjwvb3RvYm9fc3RhdHM+Cg==</File>
