@@ -5,7 +5,7 @@
         <Navigation>Core::Package</Navigation>
         <Value>
             <Hash>
-                <Item Key="https://ftp.otobo.org/pub/otobo/itsm/bundle6/">OTOBO::ITSM 6 Bundle Master</Item>
+                <Item Key="https://ftp.otobo.org/pub/otobo/packages-itsm/bundle10/">OTOBO::ITSM 10 Bundle</Item>
             </Hash>
         </Value>
     </Setting>
