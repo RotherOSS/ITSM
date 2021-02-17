@@ -58,19 +58,19 @@
         <br>
         <br>
         You are about to install the OTOBO package ITSM.
-        This package will install OTOBO::ITSM 10.0.1 on your system.
+        This package will install OTOBO::ITSM 10.0.2 on your system.
         <br>
         <br>
         After a successful installation, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         <br>
@@ -124,19 +124,19 @@
         <br>
         <br>
         Sie sind im Begriff das OTOBO-Paket ITSM zu installieren.
-        Dieses Paket installiert OTOBO::ITSM 10.0.1 auf Ihrem System.
+        Dieses Paket installiert OTOBO::ITSM 10.0.2 auf Ihrem System.
         <br>
         <br>
         Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         <br>
@@ -192,20 +192,20 @@
         <br>
         <br>
         Ön az OTOBO::ITSM csomag telepítésére készül.
-        Ez a csomag az OTOBO::ITSM 10.0.1 verzióját fogja telepíteni a rendszerre.
+        Ez a csomag az OTOBO::ITSM 10.0.2 verzióját fogja telepíteni a rendszerre.
         <br>
         <br>
         Egy sikeres telepítés után a következő csomagokat fogja telepíteni és megjeleníteni a
         csomagkezelő:
         <br>
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         <br>
@@ -265,19 +265,19 @@
         <br>
         <br>
         You are about to upgrade the OTOBO package ITSM.<br>
-        This package will upgrade your system to OTOBO::ITSM 10.0.1.
+        This package will upgrade your system to OTOBO::ITSM 10.0.2.
         <br>
         <br>
         After a successful upgrade, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         <br>
@@ -302,19 +302,19 @@
         <br>
         <br>
         Sie sind im Begriff das OTOBO-Paket ITSM zu aktualisieren.
-        Dieses Paket aktualisiert Ihr System auf OTOBO::ITSM 10.0.1.
+        Dieses Paket aktualisiert Ihr System auf OTOBO::ITSM 10.0.2.
         <br>
         <br>
         Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         <br>
@@ -339,20 +339,20 @@
         <br>
         <br>
         Ön az OTOBO::ITSM csomag frissítésére készül.
-        Ez a csomag frissíteni fogja a rendszerét az OTOBO::ITSM 10.0.1 verziójára.
+        Ez a csomag frissíteni fogja a rendszerét az OTOBO::ITSM 10.0.2 verziójára.
         <br>
         <br>
         Egy sikeres frissítés után a következő csomagokat fogja telepíteni és megjeleníteni a
         csomagkezelő:
         <br>
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         <br>
@@ -378,13 +378,13 @@
         <br>
         If you uninstall this package, the following packages will be uninstalled automatically:
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         All database tables that were created during installation will be deleted.
@@ -415,13 +415,13 @@
         <br>
         Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
@@ -452,13 +452,13 @@
         <br>
         Ha eltávolítja ezt a csomagot, akkor a következő csomagok lesznek automatikusan eltávolítva:
         <ul>
-        <li>GeneralCatalog 10.0.1</li>
-        <li>ITSMCore 10.0.1</li>
-        <li>ITSMIncidentProblemManagement 10.0.1</li>
-        <li>ITSMConfigurationManagement 10.0.1</li>
-        <li>ITSMChangeManagement 10.0.1</li>
-        <li>ITSMServiceLevelManagement 10.0.1</li>
-        <li>ImportExport 10.0.1</li>
+        <li>GeneralCatalog 10.0.2</li>
+        <li>ITSMCore 10.0.2</li>
+        <li>ITSMIncidentProblemManagement 10.0.2</li>
+        <li>ITSMConfigurationManagement 10.0.2</li>
+        <li>ITSMChangeManagement 10.0.2</li>
+        <li>ITSMServiceLevelManagement 10.0.2</li>
+        <li>ImportExport 10.0.2</li>
         </ul>
         <br>
         A telepítés során létrehozott összes adatbázistábla törlésre kerül.
