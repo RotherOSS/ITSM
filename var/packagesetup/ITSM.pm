@@ -74,7 +74,7 @@ sub new {
     ];
 
     # define the version of the included packages TODO
-    $Self->{PackageVersion} = '10.0.2';
+    $Self->{PackageVersion} = '10.0.3';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
