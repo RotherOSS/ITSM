@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMChangeManagement</Name>
-    <Version>10.1.2</Version>
+    <Version>10.1.3</Version>
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.de/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <ChangeLog Date="2023-08-29 08:17:12" Version="10.1.3">Part of ITSM 10.1.3 Update;</ChangeLog>
     <ChangeLog Date="2022-08-18 08:44:14" Version="10.1.2">- Update to OTOBO 10.1.5, prepare for version 10.1.2.
 - Translated using Weblate (Russian)</ChangeLog>
     <ChangeLog Date="2021-12-07 12:53:37" Version="10.1.1">Initial release for OTOBO 10.1.</ChangeLog>
@@ -24,7 +25,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTOBO PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -42,7 +43,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTOBO-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -59,7 +60,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTOBO REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -76,7 +77,7 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTOBO CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -254,7 +255,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTOBO PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -272,7 +273,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTOBO-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -290,7 +291,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTOBO REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -308,14 +309,14 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTOBO CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 10.1.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 10.1.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="10.1.2">ITSMCore</PackageRequired>
+    <PackageRequired Version="10.1.3">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -440,7 +441,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2022-08-18 08:44:14</BuildDate>
+    <BuildDate>2023-08-29 08:17:12</BuildDate>
     <BuildHost>opms</BuildHost>
     <Filelist>
         <File Location="doc/itsm-change-management-database.dia" Permission="660" Encode="Base64">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</File>
